@@ -46,21 +46,19 @@ end
 ---@param weaponName string
 ---@return boolean
 Core.Functions.HasPlayerWeapon = function(player --[[Player]], weaponName --[[string]] )
-    local findedWeapon = false
-
-    if weaponName == nil or weaponName == "" then return findedWeapon end
+    if not weaponName or weaponName == "" then return false end
 
     local playerWeapons = player:GetWeaponManager():GetWeapons()
     
     for _, weaponHandler in ipairs(playerWeapons) do
         local weaponInstance = CEntityInstance(weaponHandler:CBasePlayerWeapon():ToPtr())
-        if weaponInstance ~= nil and weaponInstance:IsValid() and weaponInstance.Entity.DesignerName == weaponName then
-            findedWeapon = true
-            break
+        if weaponInstance and weaponInstance:IsValid() then
+            if weaponInstance.Entity.DesignerName == weaponName then
+                return true
+            end
         end
     end
-    return findedWeapon
-
+    return false
 end
 
 ---Get a team score
