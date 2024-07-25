@@ -103,8 +103,7 @@ end
 Core.Functions.IsBombPlantedSide = function(bombSideId)
     local plantedBomb = Core.Functions.GetCPlantedC4()
     if plantedBomb == nil then return false end
-    if plantedBomb.BombSite ~= bombSideId then return false end
-    return false
+    return (plantedBomb.BombSite == bombSideId) 
 end
 
 ---Calculate distance beetwen Vector3
