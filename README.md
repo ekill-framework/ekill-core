@@ -13,10 +13,8 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/github/downloads/ekill-framework/ekill-core/total" alt="Downloads"> 
   <img src="https://img.shields.io/github/contributors/ekill-framework/ekill-core?color=dark-green" alt="Contributors">
   <img src="https://img.shields.io/github/issues/ekill-framework/ekill-core" alt="Issues">
-  <img src="https://img.shields.io/github/license/ekill-framework/ekill-core" alt="License">
 </p>
 
 <p align="center"><sub>Made by: <a href="https://github.com/m3ntorinho" target="_blank">@m3ntorinho</a> & <a href="https://ekill.dev" target="_blank">eKill Development</a>
