@@ -1,7 +1,7 @@
 <p align="center">
 
-  <a href="https://github.com/swiftly-solution/deathmatch">
-    <img src="https://github.com/user-attachments/assets/5c4e2699-e2d1-4840-afb5-109c279c226c" alt="eKillLogo" width="630" height="201">
+  <a href="https://github.com/ekill-framework/ekill-core">
+    <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/176477533/352083070-b68e5610-5db7-4693-8a05-5c96af0bb503.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240725%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240725T110936Z&X-Amz-Expires=300&X-Amz-Signature=82a523eb545a0a86b5114b16f073170b80b7d1544e8b25d6d730f22079f0da03&X-Amz-SignedHeaders=host&actor_id=176477533&key_id=0&repo_id=833586191" alt="eKillLogo" width="630" height="201">
   </a>
 
   <h1 align="center">Core</h1>
