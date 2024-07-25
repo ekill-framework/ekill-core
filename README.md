@@ -88,9 +88,9 @@ Core.Functions.IsPlayerValid(player) or exports["ekill-core"]:IsPlayerValid(play
 ```
 - **IsPlayerIdValid**
 ```lua
----@param player Player
+---@param playerid number
 ---@return boolean
-Core.Functions.IsPlayerIdValid(player) or exports["ekill-core"]:IsPlayerIdValid(player)
+Core.Functions.IsPlayerIdValid(playerid) or exports["ekill-core"]:IsPlayerIdValid(playerid)
 ```
 - **IsPistolRound**
 ```lua
