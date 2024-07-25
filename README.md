@@ -19,7 +19,10 @@
   <img src="https://img.shields.io/github/license/ekill-framework/ekill-core" alt="License">
 </p>
 
-<p align="center"><sub>Made by: <a href="https://github.com/m3ntorinho" target="_blank">@m3ntorinho</a> &  <a href="https://ekill.dev" target="_blank">eKill Development</a><br/> ✦ Special thanks to: <a href="https://github.com/skuzzis" target="_blank">@skuzzis</a></sub></p>
+<p align="center"><sub>Made by: <a href="https://github.com/m3ntorinho" target="_blank">@m3ntorinho</a> & <a href="https://ekill.dev" target="_blank">eKill Development</a>
+  <br/>
+  ✦ Special thanks to: <a href="https://github.com/skuzzis" target="_blank">@skuzzis</a> & <a href="https://github.com/qbcore-framework/qb-core" target="_blank">QBCore</a>
+</sub></p>
 
 ---
 ### Requeriments 📄
