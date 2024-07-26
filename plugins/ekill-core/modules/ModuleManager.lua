@@ -6,7 +6,7 @@ ModuleManager.__index = ModuleManager
 function ModuleManager.Initialize()
     local self = setmetatable({}, ModuleManager)
     self.Cache = {}
-    self.Path = string.format("%s/modules", GetPluginPath(GetPluginName()))
+    self.Path = string.format("%s/modules", GetPluginPath("ekill-core"))
     local moduleArraySize = config:FetchArraySize("ekill-core.enable_modules")
 
     for index = 0 , moduleArraySize -1, 1 do
@@ -17,8 +17,8 @@ function ModuleManager.Initialize()
         
         if files:ExistsPath(modulePath) and files:IsDirectory(modulePath) then
             self.Cache[moduleName] = true
-            if Core.IsLogEnabled() then logger:Write(LogType_t.Debug , string.format("Module %s loading..", moduleName)) end
-            if Core.IsDebugEnabled() then print(string.format("Module {GREEN}%s{DEFAULT} loading...", moduleName)) end
+            if Core.IsLogEnabled() then logger:Write(LogType_t.Debug , string.format("Module %s enabled", moduleName)) end
+            if Core.IsDebugEnabled() then print(string.format("Module {GREEN}%s{DEFAULT} enabled...", moduleName)) end
         else
             if Core.IsLogEnabled() then logger:Write(LogType_t.Debug , string.format("Module %s doesn't exist..", moduleName)) end
             if Core.IsDebugEnabled() then print(string.format("Module {RED}%s{DEFAULT} doesn't exist...", moduleName)) end

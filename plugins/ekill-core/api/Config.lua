@@ -7,6 +7,6 @@ Core.API.Config = {}
 ---@param configName any
 ---@return table|nil
 function Core.API.Config:Get(configName --[[string]])
-    return Core.ConfigManager.Get(configName)
+    return Core.ConfigManager:Get(configName)
 end
 
