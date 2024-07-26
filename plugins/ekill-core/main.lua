@@ -1,61 +1,25 @@
 if not Core then Core = {} end
 
-export("GetCoreObject", function ()
-    return Core
-end)
+Core.IsDebugEnabled = function() return config:Fetch("ekill-core.debug") end
 
-export("IsPlayerValid", function (player --[[Player]])
-    return Core.Functions.IsPlayerValid(player)
-end)
+Core.IsLogEnabled = function() return config:Fetch("ekill-core.log") end
 
-export("IsPlayerIdValid", function (playerid --[[number]])
-    return Core.Functions.IsPlayerIdValid(playerid)
-end)
+Core.GetPrefix = function() return config:Fetch("ekill-core.prefix") end
 
-export("IsPistolRound", function ()
-    return Core.Functions.IsPistolRound()
-end)
+AddEventHandler("OnPluginStart", function(event)
 
-export("IsWarmupPeriod", function ()
-    return Core.Functions.IsWarmupPeriod()
-end)
+   print(string.format("Starting {PURPLE}v%s{DEFAULT}", GetPluginVersion()))
 
-export("HasPlayerWeapon", function (player --[[Player]], weaponName --[[string]])
-    return Core.Functions.HasPlayerWeapon(player,weaponName)
-end)
+    Core.ModuleManager =  ModuleManager()
 
-export("GetTeamScore", function (teamID)
-    return Core.Functions.GetTeamScore(teamID)
-end)
+    if not Core.ModuleManager:IsModuleEnabled("config") then return EventResult.Continue end
 
-export("GetCPlantedC4", function ()
-    return Core.Functions.GetCPlantedC4()
-end)
-
-export("IsBombPlanted", function ()
-    return Core.Functions.IsBombPlanted()
-end)
-
-export("IsBombPlantedSide", function (bombSideID --[[number]])
-    return Core.Functions.IsBombPlantedSide(bombSideID)
-end)
-
-export("CalculateDistanceBetweenVector", function (vector1 --[[Vector]], vector2 --[[Vector]])
-    return Core.Functions.CalculateDistanceBetweenVector(vector1,vector2)
-end)
-
-export("SendToPlayer", function (prefix --[[string]], messageType --[[MessageType]], player --[[Player]], message --[[string]])
-    return Core.Functions.SendToPlayer(prefix,messageType,player,message)
-end)
-
-export("SendToAllPlayers", function (prefix --[[string]], messageType --[[MessageType]], message --[[string]])
-    return Core.Functions.SendToAllPlayers(prefix,messageType,message)
-end)
-
-
-AddEventHandler("OnPluginStart", function(event --[[ Event ]])
-    
-    TriggerEvent(Core.Types.Events.OnCoreLoaded, Core)
+    Core.ConfigManager = ConfigManager()
 
     return EventResult.Continue
+end)
+
+
+export("GetCoreObject", function()
+    return Core.API
 end)

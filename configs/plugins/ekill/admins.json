@@ -1,0 +1,14 @@
+[
+    {
+        "steamid":"STEAMID",
+        "immunity": 20,
+        "flags": ["@swiftly/root"],
+        "group":[]
+    },
+    {
+        "steamid":"STEAMID2",
+        "immunity": 20,
+        "flags": ["@swiftly/root"],
+        "group":[]
+    }
+]
