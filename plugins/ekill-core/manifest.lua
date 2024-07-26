@@ -3,11 +3,11 @@ function GetPluginAuthor()
 end
 
 function GetPluginVersion()
-    return "1.0"
+    return "1.0.0"
 end
 
 function GetPluginName()
-    return "ekill-core"
+    return "[eKill] Core"
 end
 
 function GetPluginWebsite()
