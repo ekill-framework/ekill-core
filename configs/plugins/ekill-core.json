@@ -1,7 +1,5 @@
 {
     "debug": true,
     "log": true,
-    "prefix": "͖☠ {PURPLE}ekill-core{DEFAULT} ☠",
-    "enable_modules": ["config","admin"]
-
+    "prefix": "͖☠ {PURPLE}ekill-core{DEFAULT} ☠"
 }
