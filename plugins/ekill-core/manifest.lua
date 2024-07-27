@@ -1,5 +1,5 @@
 function GetPluginAuthor()
-    return "m3ntor"
+    return "eKill-Framework & m3ntor"
 end
 
 function GetPluginVersion()
