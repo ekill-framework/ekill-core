@@ -1,13 +1,13 @@
 [
     {
-        "steamid":"STEAMID",
+        "identity":"76561198101370503",
         "immunity": 20,
         "flags": ["@swiftly/root"],
         "group":[]
     },
     {
-        "steamid":"STEAMID2",
-        "immunity": 20,
+        "identity":"76561198101370503",
+        "immunity": 60,
         "flags": ["@swiftly/root"],
         "group":[]
     }
