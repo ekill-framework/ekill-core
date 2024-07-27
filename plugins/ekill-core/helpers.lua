@@ -14,8 +14,18 @@ end
   
 Core.Helpers.Table.UnionWith = function(table, newTable)
     for _, item in ipairs(newTable) do
-        if not table[item] then
-            table.insert(table, item)
+        -- Check if the item is already in the table
+        local exists = false
+        for _, existingItem in ipairs(table) do
+            if existingItem == item then
+                exists = true
+                break
+            end
+        end
+        
+        -- If item does not exist, insert it
+        if not exists then
+            table[#table + 1] = item
         end
     end
 end
@@ -28,6 +38,8 @@ Core.Helpers.Table.Contains = function(table, value)
     end
     return false
 end
+
+
 
 
 
