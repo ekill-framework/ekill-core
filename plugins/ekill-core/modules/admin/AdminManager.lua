@@ -42,7 +42,7 @@ function AdminManager:LoadAdminsFromFile()
     end
 
     print(string.format("{BLUE} Admins loaded from config file: %d", Core.Helpers.Table.Count(self.Admins)))
-    if Core.IsDebugEnabled() then print(string.format("{BLUE} %s", json.encode(self.Admins))) end
+    if Core.IsDebugEnabled() then print(string.format("{BLUE} %s", json.encode(self.Admins,{}))) end
 end
 
 function AdminManager:LoadGroupsFromFile()
@@ -86,7 +86,7 @@ function AdminManager:LoadGroupsFromFile()
 
     print(string.format("{BLUE} Groups loaded from config file: %d", Core.Helpers.Table.Count(self.Groups)))
 
-    if Core.IsDebugEnabled() then print(string.format("{BLUE} %s", json.encode(self.Groups))) end
+    if Core.IsDebugEnabled() then print(string.format("{BLUE} %s", json.encode(self.Groups,{}))) end
 end
 
 function AdminManager:GetPlayerAdminData(player --[[Player]])
