@@ -1,0 +1,6 @@
+{
+    "#ekill/test":{
+        "flags":["@ekill/a","@ekill/b"],
+        "immunity":10
+    }
+}

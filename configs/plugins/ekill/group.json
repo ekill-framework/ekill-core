@@ -1,5 +1,0 @@
-{
-    "#ekill/test":{
-        "flags":["@ekill/a","@ekill/b"]
-    }
-}

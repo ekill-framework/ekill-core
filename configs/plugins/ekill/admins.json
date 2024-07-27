@@ -3,12 +3,6 @@
         "identity":"76561198101370503",
         "immunity": 20,
         "flags": ["@swiftly/root"],
-        "group":[]
-    },
-    {
-        "identity":"76561198101370503",
-        "immunity": 60,
-        "flags": ["@swiftly/root"],
-        "group":[]
+        "group":["#ekill/test"]
     }
 ]

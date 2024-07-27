@@ -39,6 +39,28 @@ Core.Helpers.Table.Contains = function(table, value)
     return false
 end
 
+Core.Helpers.Table.Count = function(table)
+    local count = 0
+    for _,v in pairs(table) do
+        count = count + 1
+    end
+    return count
+end
+
+Core.Helpers.Table.ExceptWith = function(table, value)
+    local tableSet = {}
+    
+    for _, data in ipairs(value) do
+        tableSet[data] = true
+    end
+    
+    for key, _ in pairs(table) do
+        if tableSet[key] then
+            table[key] = nil
+        end
+    end
+end
+
 
 
 
